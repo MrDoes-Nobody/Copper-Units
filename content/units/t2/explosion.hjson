@@ -1,0 +1,156 @@
+alwaysUnlocked: false
+  armor: 0
+  accel: 0.1
+  buildSpeed: 0
+  health: 6700
+  drawCell: true
+  itemCapacity: 150
+  isEnemy: true
+  type: legs
+  rippleScale: 0.1
+  rotateSpeed: 2.5
+  legGroupSize: 3
+  legContinuousMove: false
+  legExtension: -10
+  legSplashDamage: 15
+  legSplashRange: 16
+	legBaseOffset: 0
+  speed: 3.55
+  flying: false
+  hitSize: 14
+  targetAir: true
+  targetGround: true
+  legLength: 26
+  legLangeScale: 25
+  legCount: 10
+  lockLegBase: false
+  legExtension: 0
+  stepShake: 0.8
+  weapons: [
+    {
+	parts: [
+	{
+			suffix: -core
+			mirror: false
+			x: 0
+			y: 0
+			progress: warmup
+			heatProgress: warmup
+			moveX: 0
+			moveY: 0
+			moveRot: 0
+		}
+		{
+			suffix: -up
+			mirror: true
+			x: 5
+			y: 0
+			progress: warmup
+			heatProgress: warmup
+			moveX: 4.5
+			moveY: 0
+			moveRot: 0
+		}
+	]
+	x: 0
+	y: 0
+      name: explosion-weapon
+      reload: 1
+	  recoil: 0
+	  heatProgress: warmup
+	  rotate: false
+	  rotateSpeed: 0
+	  mirror: false
+      shootCone: 180
+	  minWarmup: 0.99999
+      ejectEffect: none
+	  outline: false
+	  under: true
+      shootSound: largeExplosion
+      bullet: {
+        type: BombBulletType
+        lifetime: 1
+        speed: 1
+		statusDuration: 99000
+		status: irradiated
+        splashDamageRadius: 120
+        instantDisappear: true
+        splashDamage: 2920
+        killShooter: true
+        hittable: false
+        collidesAir: true
+		collidesTeam: true
+		damageTeam: true
+		hitTeam: true
+		despawnEffect: [
+		        {
+					type: ExplosionEffect
+					smokes: 45
+					smokeRad: 120
+					smokeSize: 15
+					smokeColor: 6cff5eaf
+					waveRad: 120
+					waveStroke: 3
+					waveColor: ffffff10
+					waveLife: 150
+					lifetime: 550
+					sparks: 25
+					sparksLengh: 25
+					sparksRad: 150
+					sparksLife: 140
+				}
+				{
+					type: ExplosionEffect
+					smokes: 8
+					smokeRad: 150
+					smokeSize: 23
+					smokeColor: 6cff5eaf
+					waveRad: 40
+					waveStroke: 0
+					waveColor: ffffff10
+					waveLife: 0
+					lifetime: 490
+				}
+				{
+					type: ExplosionEffect
+					smokes: 286
+					smokeRad: 120
+					smokeSize: 4
+					smokeColor: 6cff5eaf
+					lifetime: 470
+					waveRad: 0
+					waveStroke: 0
+					waveColor: ffffff10
+					waveLife: 0
+					
+				}
+				{
+					type: ExplosionEffect
+					smokes: 286
+					smokeRad: 120
+					smokeSize: 4
+					smokeColor: 6cff5eaf
+					lifetime: 520
+					waveRad: 0
+					waveStroke: 0
+					waveColor: ffffff10
+					waveLife: 0
+					
+				}
+                       ]   				
+      }
+    }
+  ]
+  research: {
+		parent: copperamic-shock
+		objectives: [copper-refabricator]
+		planet: serpulo
+		requirements: [
+copper/12000
+titanium/5500
+silicon/3700
+coal/4500
+]
+	}
+
+  

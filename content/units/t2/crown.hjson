@@ -1,0 +1,225 @@
+	type: mech
+	flying: false
+	speed: 0.28
+	hitSize: 14
+	health: 9550
+	armor: 9
+	rotateSpeed: 0.5
+	itemCapasity: 160
+	weapons: [
+		{
+		shoot: {
+				shots: 2
+				shotDelay: 40
+			}
+			name: crown-weapon
+			rotate: false
+			rotateSpeed: 0
+			rotationLimit: 0
+			x: 16.5
+			y: 0
+			shootY: 7
+			reload: 150
+			targetGround: true
+			targetAir: false
+			shootCone: 180
+			shake: 4
+			top: false
+			recoil: 4
+			  ejectEffect: casing3Double
+			  shootSound: artillery
+			heatProgress: reload
+			bullet: {
+				type: BasicBulletType
+				speed: 4.5
+				damage: 25
+				splashDamage: 250
+				splashDamageRadius: 56
+				lifetime: 100
+				drag: 0.02
+				collisionGround: true
+			collisionAir: false
+				backColor: eec39a
+				frontColor: eec39a
+				height: 16
+				width: 8
+				sprite: circle
+				knockback: 1.5
+				trailEffect: {
+				type: ExplosionEffect
+					smokes: 5
+					smokeRad: 45
+					smokeSize: 2
+					smokeColor: eec39a
+					sparks: 0
+					lifetime: 100
+				}
+				despawnEffect: {
+					type: ExplosionEffect
+					smokes: 5
+					smokeRad: 45
+					smokeSize: 2
+					smokeColor: eec39a
+					waveRad: 56
+					waveStroke: 1
+					waveColor: eec39a
+					waveLife: 20
+					lifetime: 100
+				}
+				hitEffect: {
+					type: ExplosionEffect
+					smokes: 3
+					smokeRad: 20
+					smokeSize: 2
+					smokeColor: eec39a
+					lifetime: 60
+				}
+				fragBullets: 4
+			fragVelocityMin: 1
+			fragRandomSpread: 90
+			fragAngle: 0
+			fragBullet: {
+			type: BasicBulletType
+				speed: 2.5
+				damage: 5
+				splashDamage: 50
+		        splashDamageRadius: 24 
+				collisionGround: true
+			collisionAir: false
+				lifetime: 100
+				drag: 0.05
+				backColor: eec39a
+				frontColor: eec39a
+				height: 8
+				width: 4
+				sprite: circle
+				knockback: 0
+				trailEffect: {
+				type: ExplosionEffect
+					smokes: 2
+					smokeRad: 20
+					smokeSize: 2
+					smokeColor: eec39a
+					sparks: 0
+					lifetime: 60
+				}
+				despawnEffect: {
+					type: ExplosionEffect
+					smokes: 2
+					smokeRad: 20
+					smokeSize: 1
+					smokeColor: eec39a
+					lifetime: 60
+					waveRad: 24
+					waveStroke: 1
+					waveColor: eec39a
+					waveLife: 20
+				}
+				hitEffect: {
+					type: ExplosionEffect
+					smokes: 3
+					smokeRad: 20
+					smokeSize: 2
+					smokeColor: eec39a
+					lifetime: 60
+				}
+				}
+			}
+		}
+		{
+		parts: [
+		{
+			suffix: -gun
+			mirror: false
+			x: 0
+			y: 0
+			progress: recoil
+			heatProgress: recoil
+			moveX: 0
+			moveY: -3.5
+			moveRot: 0
+		}
+		{
+			suffix: -middle
+			mirror: false
+			x: 0
+			y: 0
+			progress: recoil
+			moveX: 0
+			moveY: -0.2
+			moveRot: 0
+		}
+	]
+		shoot: {
+type: ShootAlternate
+shots: 2
+barrels: 2
+spread: 3
+}
+
+			name: crown-small-weapon
+			rotate: true
+			 rotateShooting: false
+			rotateSpeed: 3
+			shootCone: 25
+			x: 5.5
+			y: -1.0
+			shootY: 1.75
+			mirror: true
+			ignoreRotation: true
+			targetGround: false
+			targetAir: true
+			reload: 30
+			shake: 1
+			top: true
+			ejectEffect: casing2
+			heatProgress: reload
+			bullet: {
+				type: BasicBulletType
+				speed: 3.5
+				damage: 15
+				lifetime: 75
+				backColor: eec39a
+				frontColor: eec39a
+				height: 10
+				width: 6
+				sprite: shell
+				knockback: 1.5
+				trailEffect: {
+				type: ExplosionEffect
+					smokes: 2
+					smokeRad: 20
+					smokeSize: 1
+					smokeColor: eec39a
+					sparks: 0
+					lifetime: 60
+				}
+				despawnEffect: {
+					type: ExplosionEffect
+					smokes: 2
+					smokeRad: 20
+					smokeSize: 1
+					smokeColor: eec39a
+					lifetime: 60
+				}
+				hitEffect: {
+					type: ExplosionEffect
+					smokes: 3
+					smokeRad: 20
+					smokeSize: 2
+					smokeColor: eec39a
+					lifetime: 60
+				}
+			}
+		}
+	]
+	research: {
+		parent: copperamic-queue
+		objectives: [copper-refabricator]
+		planet: serpulo
+		requirements: [
+copper/12000
+silicon/5500
+titanium/7500
+]
+	}

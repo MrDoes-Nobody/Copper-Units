@@ -1,0 +1,175 @@
+alwaysUnlocked: false
+  armor: 0
+  accel: 0.1
+  buildSpeed: 0
+  health: 850
+  drawCell: true
+  itemCapacity: 55
+  isEnemy: true
+  lockLegBase: true
+  type: legs
+  rippleScale: 0.1
+  rotateSpeed: 3
+  legGroupSize: 2
+  legContinuousMove: false
+  legSplashDamage: 0
+  speed: 2.0
+  flying: false
+  hitSize: 14
+  targetAir: true
+  targetGround: true
+  legLength: 16
+  legCount: 6
+  lockLegBase: true
+  legExtension: 7
+  stepShake: 0.0
+  weapons: [
+  {
+	name: shock-weapon
+	minWarmup: 0.99
+	mirror: false
+	x: 0
+	y: 0
+	reload: 50
+	outline: true
+	shake: 3
+	top: true
+	ejectEffect: blastExplosion
+	rotate: true
+	rotationLimit: 30
+	rotateSpeed: 2
+	shootSound: spark
+	parts: [
+		{
+			suffix: -down
+			mirror: false
+			x: 0
+			y: 0
+			progress: warmup
+			moveX: 0
+			moveY: -0.5
+			moveRot: 0
+		}
+		{
+			suffix: -middle
+			mirror: false
+			x: 0
+			y: 0
+			progress: warmup
+			moveX: 0
+			moveY: -1.2
+			moveRot: 0
+		}
+		{
+			suffix: -up
+			mirror: true
+			x: 0.5
+			y: 0
+			progress: warmup
+			moveX: 2.5
+			moveY: -2.5
+			moveRot: 0
+		}
+	]
+	bullet: {
+		type: BasicBulletType
+		width: 12
+		shrinkX: 0
+		height: 12
+		shrinkY: 0
+		speed: 4.5
+		drag: 0.03
+		damage: 60
+		splashDamage: 15
+		splashDamageRadius: 15
+		lifetime: 80
+	//	backColor: 1a1a1a
+	//	frontColor: 525252
+		hitEffect: none
+		despawnEffect: none
+		trailColor: ffdb7f
+				trailChance: -2
+				trailWidth: 3.5
+				trailLength: 7
+				status: shocked
+				statusDuration: 150
+		hitEffect: {
+			type: WaveEffect 
+        colorFrom: f5ca5d
+        colorTo: ffdb7f00
+        sizeFrom: 14 
+        sizeTo: 14
+        lightScl: 5 
+        lightOpacity: 0.7
+        rotation: 0 
+        strokeFrom: 5
+        strokeTo: 0 
+        lifetime: 75
+		}
+		despawnEffect: {
+			type: WaveEffect 
+        colorFrom: f5ca5d
+        colorTo: ffdb7f00
+        sizeFrom: 14 
+        sizeTo: 14
+        lightScl: 5 
+        lightOpacity: 0.7
+        rotation: 0 
+        strokeFrom: 5
+        strokeTo: 0 
+        lifetime: 75
+		}
+		fragBullets: 7
+			fragVelocityMin: 1
+			fragRandomSpread: 360
+			fragAngle: 0
+			fragBullet: {
+				type: BasicBulletType
+		width: 3
+		shrinkX: 0
+		height: 3
+		shrinkY: 0
+		speed: 4.5
+		drag: 0.05
+		damage: 15
+		splashDamage: 15
+		splashDamageRadius: 15
+		status: shocked
+				statusDuration: 35
+		lifetime: 5
+	//	backColor: 1a1a1a
+	//	frontColor: 525252
+		hitEffect: none
+		despawnEffect: none
+		trailColor: ffdb7f
+				trailChance: -2
+				trailWidth: 0.5
+				trailLength: 2.5
+		despawnEffect: {
+			type: WaveEffect 
+        colorFrom: f5ca5d
+        colorTo: ffdb7f00
+        sizeFrom: 4 
+        sizeTo: 4
+        lightScl: 5 
+        lightOpacity: 0.7
+        rotation: 0 
+        strokeFrom: 2
+        strokeTo: 0 
+        lifetime: 75
+		}
+			}
+	}
+}
+  ]
+  research: {
+		parent: copperamic-copper-fabric
+		planet: serpulo
+		requirements: [
+silicon/1200
+titanium/450
+copper/500
+]
+	}
+
+  

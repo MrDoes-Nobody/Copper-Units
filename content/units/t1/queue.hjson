@@ -1,0 +1,157 @@
+	type: mech
+	flying: false
+	speed: 0.4
+	hitSize: 9
+	health: 750
+	armor: 3
+	itemCapasity: 65
+	weapons: [
+		{
+		shoot: {
+				shots: 7
+				shotDelay: 4
+			}
+			name: queue-weapon
+			rotate: true
+			rotateSpeed: 2
+			rotationLimit: 9
+			shootCone: 25
+			x: 7.0
+			y: 0
+			shootY: 7
+			reload: 75
+			shake: 2
+			top: false
+			ejectEffect: none
+			heatProgress: reload
+			bullet: {
+				type: BasicBulletType
+				speed: 2.5
+				damage: 25
+				lifetime: 50
+				pierce: true
+				pierceCap: 2
+				backColor: eec39a
+				frontColor: eec39a
+				height: 8
+				width: 5
+				sprite: shell
+				knockback: 0.5
+				trailEffect: {
+				type: ExplosionEffect
+					smokes: 2
+					smokeRad: 20
+					smokeSize: 1
+					smokeColor: eec39a
+					sparks: 0
+					lifetime: 60
+				}
+				despawnEffect: {
+					type: ExplosionEffect
+					smokes: 2
+					smokeRad: 20
+					smokeSize: 1
+					smokeColor: eec39a
+					lifetime: 60
+				}
+				hitEffect: {
+					type: ExplosionEffect
+					smokes: 3
+					smokeRad: 20
+					smokeSize: 2
+					smokeColor: eec39a
+					lifetime: 60
+				}
+			}
+		}
+		{
+		parts: [
+		{
+			suffix: -gun
+			mirror: false
+			x: 0
+			y: 0
+			progress: recoil
+			heatProgress: recoil
+			moveX: 0
+			moveY: -0.5
+			moveRot: 0
+		}
+		{
+			suffix: -middle
+			mirror: false
+			x: 0
+			y: 0
+			progress: recoil
+			moveX: 0
+			moveY: -1.2
+			moveRot: 0
+		}
+	]
+		shoot: {
+				shots: 2
+				shotDelay: 15
+			}
+			name: queue-second-weapon
+			rotate: false
+			shootCone: 25
+			x: 0.0
+			y: 0
+			shootY: 1.75
+			mirror: false
+			reload: 45
+			shake: 1
+			top: true
+			ejectEffect: none
+			heatProgress: recoil
+			bullet: {
+				type: BasicBulletType
+				speed: 3.5
+				damage: 35
+				lifetime: 55
+				pierce: true
+				pierceCap: 2
+			    pierceBuilding: true
+				backColor: eec39a
+				frontColor: eec39a
+				height: 10
+				width: 6
+				sprite: shell
+				knockback: 1.5
+				trailEffect: {
+				type: ExplosionEffect
+					smokes: 2
+					smokeRad: 20
+					smokeSize: 1
+					smokeColor: eec39a
+					sparks: 0
+					lifetime: 60
+				}
+				despawnEffect: {
+					type: ExplosionEffect
+					smokes: 2
+					smokeRad: 20
+					smokeSize: 1
+					smokeColor: eec39a
+					lifetime: 60
+				}
+				hitEffect: {
+					type: ExplosionEffect
+					smokes: 3
+					smokeRad: 20
+					smokeSize: 2
+					smokeColor: eec39a
+					lifetime: 60
+				}
+			}
+		}
+	]
+	research: {
+		parent: copperamic-copper-fabric
+		planet: serpulo
+		requirements: [
+silicon/1400
+titanium/150
+copper/550
+]
+	}

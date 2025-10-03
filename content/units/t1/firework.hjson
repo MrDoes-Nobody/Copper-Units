@@ -1,0 +1,181 @@
+ type: naval
+  armor: 50
+  drag: 0.17
+  targetAir: true
+  hitSize: 25
+  health: 550
+  speed: 0.56
+  accel: 0.18
+  rotateSpeed: 1.6
+  trailX: 125
+  trailY: 0
+  trailScl: 1.5
+  trailLength: 56
+  rotateShooting: false
+  itemCapasity: 70
+  weapons: [
+  {
+	name: firework-weapon
+	minWarmup: 0.99
+	x: 0
+	y: 0
+	reload: 360
+	shake: 7
+	recoil: 4
+	top: true
+	mirror: false
+	ejectEffect: blastExplosion
+	rotate: true
+	rotateSpeed: 1.6
+	heatProgress: recoil
+	 shootSound: artillery
+	bullet: {
+		type: basicBulletType
+		targetGround: true
+		targetAir: true
+		width: 8
+		height: 8
+		speed: 7.5
+		acell: -0.01
+		damage: 175
+		splashDamage: 65
+		splashRange: 40
+		lifetime: 45
+		trailColor: ffdb7f
+				trailChance: -2
+				trailWidth: 3.5
+				trailLength: 3
+				bulletInterval: 3
+		intervalBullets: 18
+		intervalRandomSpread: 0
+		intervalSpread: 90
+		intervalAngle: 180
+		intervalDelay: 2
+		intervalBullet: {
+				type: basicBulletType
+		width: 2.5
+		shrinkX: 0
+		height: 2.5
+		shrinkY: 0
+		speed: 7.5
+		acell: -0.01
+		damage: 5
+		splashDamage: 4
+		splashRange: 45
+		lifetime: 5
+		pierce: true
+				pierceCap: 3
+				trailColor: ffdb7f
+				trailChance: 0
+				trailWidth: 1.5
+				trailLength: 1
+		}
+		despawnEffect: {
+					type: ExplosionEffect
+					smokes: 6
+					smokeRad: 45
+					smokeSize: 3
+					smokeColor: eec39a
+					lifetime: 60
+				}
+				hitEffect: {
+					type: ExplosionEffect
+					smokes: 6
+					smokeRad: 45
+					smokeSize: 3
+					smokeColor: eec39a
+					lifetime: 60
+				}
+		fragBullets: 4
+			fragVelocityMin: 1
+			fragRandomSpread: 90
+			fragAngle: 360
+			fragBullet: {
+			type: basicBulletType
+		width: 2.5
+		shrinkX: 0
+		height: 2.5
+		shrinkY: 0
+		speed: 7.5
+		acell: -0.01
+		damage: 15
+		splashDamage: 4
+		splashRange: 45
+		lifetime: 15
+		pierce: true
+				pierceCap: 3
+				trailColor: ffdb7f
+				trailChance: 0
+				trailWidth: 1.5
+				trailLength: 1
+		
+		despawnEffect: {
+					type: ExplosionEffect
+					smokes: 6
+					smokeRad: 45
+					smokeSize: 3
+					smokeColor: eec39a
+					lifetime: 60
+				}
+				hitEffect: {
+					type: ExplosionEffect
+					smokes: 6
+					smokeRad: 45
+					smokeSize: 3
+					smokeColor: eec39a
+					lifetime: 60
+			}
+			fragBullets: 2
+			fragVelocityMin: 1
+			fragRandomSpread: 90
+			fragAngle: 180
+			fragBullet: {
+			type: basicBulletType
+		width: 2.5
+		shrinkX: 0
+		height: 2.5
+		shrinkY: 0
+		speed: 7.5
+		acell: -0.01
+		damage: 15
+		splashDamage: 4
+		splashRange: 45
+		lifetime: 30
+		pierce: true
+				pierceCap: 3
+				trailColor: ffdb7f
+				trailChance: 0
+				trailWidth: 1.5
+				trailLength: 1
+		
+		despawnEffect: {
+					type: ExplosionEffect
+					smokes: 6
+					smokeRad: 45
+					smokeSize: 3
+					smokeColor: eec39a
+					lifetime: 60
+				}
+				hitEffect: {
+					type: ExplosionEffect
+					smokes: 6
+					smokeRad: 45
+					smokeSize: 3
+					smokeColor: eec39a
+					lifetime: 60
+			}
+			}
+			}
+	}
+}
+  ]
+  research: {
+		parent: copperamic-copper-fabric
+		planet: serpulo
+		requirements: [
+silicon/760
+titanium/300
+metaglass/270
+copper/450
+]
+	}

@@ -1,0 +1,13 @@
+{
+ "displayName": "Copper Units",
+"name": "copperamic",
+ "author": '''
+             Coding: [blue]MrDoes
+			 Sprites: [green]Kelin 
+		   ''',
+"description": "MORE COPPER, MORE!!!",
+ "version": "0.01",
+ "minGameVersion": "136",
+ "subtitle": "Copper everywhere!"
+ "dependencies": []
+}

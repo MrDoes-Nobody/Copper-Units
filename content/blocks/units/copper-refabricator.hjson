@@ -1,0 +1,31 @@
+type: Reconstructor
+category: units
+size: 7
+consumes: {
+power: 12.2
+items: [
+copper/850
+silicon/550
+titanium/350
+plastanium/300
+]
+liquids: [cryofluid/1.1]
+}
+constructTime: 3250
+upgrades: [
+[fortress, crown]
+[spiroct, explosion]
+]
+research: {
+parent: exponential-reconstructor
+objectives: [copper-reconstructor]
+}
+requirements: [
+copper/2500
+lead/750
+titanium/650
+thorium/450
+silicon/450
+plastanium/300
+phase-fabric/250
+]

@@ -1,0 +1,28 @@
+type: Reconstructor
+category: units
+size: 5
+consumes: {
+power: 7
+items: [
+copper/250
+silicon/75
+metaglass/55
+]
+}
+constructTime: 1750
+upgrades: [
+[mace, queue]
+[atrax, shock]
+[minke, firework]
+]
+research: {
+parent: multiplicative-recontructor
+objectives: [copper-mine, thorium]
+}
+requirements: [
+copper/280
+lead/25
+silicon/450
+metaglass/40
+thorium/150
+]

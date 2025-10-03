@@ -1,0 +1,13 @@
+name: 666
+sector: 97
+planet: serpulo
+difficulty: 8
+research: {
+parent: tarFields
+objectives: [
+{
+type: SectorComplete
+preset: tarFields
+}
+]
+}
