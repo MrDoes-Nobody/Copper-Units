@@ -1,5 +1,5 @@
  type: naval
-  armor: 50
+  armor: 5
   drag: 0.17
   targetAir: true
   hitSize: 25
@@ -179,3 +179,4 @@ metaglass/270
 copper/450
 ]
 	}
+
