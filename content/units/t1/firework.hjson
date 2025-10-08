@@ -3,7 +3,7 @@
   drag: 0.17
   targetAir: true
   hitSize: 25
-  health: 550
+  health: 1050
   speed: 0.56
   accel: 0.18
   rotateSpeed: 1.6
@@ -179,4 +179,5 @@ metaglass/270
 copper/450
 ]
 	}
+
 
